@@ -16,7 +16,6 @@ public class Spike : MonoBehaviour
     void Update()
     {
         transform.position = new Vector3(transform.position.x - Time.deltaTime * 10, transform.position.y, transform.position.z);
-
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -25,7 +24,7 @@ public class Spike : MonoBehaviour
 
         if(collision.gameObject.CompareTag("SpikeDestroyer"))
         {
-            Destroy(gameObject);
+           // Destroy(gameObject);
         }
     }
 

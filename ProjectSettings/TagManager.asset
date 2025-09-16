@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 3
   tags:
   - SpikeDestroyer
+  - Ground
+  - Enemy
   layers:
   - Default
   - TransparentFX
