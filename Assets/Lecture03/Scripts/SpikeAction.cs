@@ -5,6 +5,7 @@ using static UnityEngine.RuleTile.TilingRuleOutput;
 public class Spike : MonoBehaviour
 {
     private Vector3 startPoint;
+    float spikeSpeed = 5.0f;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -15,7 +16,8 @@ public class Spike : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.position = new Vector3(transform.position.x - Time.deltaTime * 10, transform.position.y, transform.position.z);
+        float moveVectorX = Time.deltaTime * spikeSpeed;
+        transform.position = new Vector3(transform.position.x - moveVectorX, transform.position.y, transform.position.z);
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
