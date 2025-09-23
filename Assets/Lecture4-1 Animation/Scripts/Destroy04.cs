@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Destroyer : MonoBehaviour
+public class Destroy04 : MonoBehaviour
 {
     List<GameObject> destroyedObjects;
 
@@ -20,7 +20,7 @@ public class Destroyer : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         Debug.Log("Destroyer Trigger");
-        if(collision.gameObject.CompareTag("Enemy"))
+        if (collision.gameObject.CompareTag("Enemy"))
         {
             Debug.Log("Add");
             destroyedObjects.Add(collision.gameObject);
@@ -30,7 +30,7 @@ public class Destroyer : MonoBehaviour
 
     private void LateUpdate()
     {
-        if(destroyedObjects.Count > 0)
+        if (destroyedObjects.Count > 0)
         {
             foreach (GameObject gameObject in destroyedObjects)
             {

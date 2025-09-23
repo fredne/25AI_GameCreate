@@ -3,7 +3,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class PC : MonoBehaviour
+public class PC4 : MonoBehaviour
 {
     Rigidbody2D rb;
     public bool isFloor;

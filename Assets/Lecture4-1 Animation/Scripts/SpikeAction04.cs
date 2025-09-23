@@ -1,12 +1,9 @@
-using UnityEditor.U2D.Aseprite;
 using UnityEngine;
-using static UnityEngine.RuleTile.TilingRuleOutput;
 
-public class Spike : MonoBehaviour
+public class SpikeAction04 : MonoBehaviour
 {
     private Vector3 startPoint;
     float spikeSpeed = 5.0f;
-
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -24,10 +21,9 @@ public class Spike : MonoBehaviour
     {
         Debug.Log("Collision");
 
-        if(collision.gameObject.CompareTag("SpikeDestroyer"))
+        if (collision.gameObject.CompareTag("SpikeDestroyer"))
         {
-           // Destroy(gameObject);
+            // Destroy(gameObject);
         }
     }
-
 }
